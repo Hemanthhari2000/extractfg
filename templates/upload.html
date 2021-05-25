@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %}
+
+<main>
+  <div class="fg-container">
+    <img src="{{ url_for('output_image') }}" style="object-fit: cover" />
+    <br /><br /><br />
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+      "
+    >
+      <div class="btn-download">
+        <a href="{{ url_for('download_files') }}"> Download </a>
+      </div>
+      <div class="btn-goBack">
+        <a href="{{ url_for('home') }}"> Go Home </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock content %}

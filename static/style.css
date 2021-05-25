@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 5px 50px rgb(223, 218, 218);
+}
+
+#signButtons {
+  border: 3px solid #2698fa;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: bold;
+  color: #2698fa;
+  cursor: pointer;
+}
+#signButtons:hover {
+  background-color: #2698fa;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bigTitle {
+  width: 600px;
+  height: 250px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.upload-container {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 10px 10px 25px rgb(240, 240, 240),
+    -10px -10px 25px rgb(240, 240, 240);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.upload-container .submit-btn {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: #2698fa;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upload-container button span {
+  margin-right: 10px;
+}
+
+.upload-container .submit-btn:hover {
+  background-color: #1e87e4;
+}
+
+.upload-container button span {
+  padding-top: 5px;
+}
+
+.btn-download,
+.btn-goBack {
+  background-color: #2698fa;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.btn-download a,
+.btn-goBack a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-goBack {
+  background-color: blueviolet;
+}

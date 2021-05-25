@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="/static/logo.png" alt="Logo" width="250px">
+        </div>
+        <div class="signInOption">
+            <button id="signButtons" onclick="location.href = 'logins'" >Login / Sign up</button>
+        </div>
+    </div>
+    <main>
+        <div class="main-content">
+            <div class="bigTitle">
+                <center>
+                    Upload an image to 
+                extract the foreground
+                </center>
+            </div>
+            <form action="/upload" class="dropzone" method="post" enctype="multipart/form-data">
+                    <div class = "upload-container">
+                    
+                        <input  type="file" name="file" required>
+                        <input class='submit-btn' type="submit" value="Extract"></input>                
+                </div>
+            </form>
+                
+            
+        </div>
+    </main>
+{% endblock %}
