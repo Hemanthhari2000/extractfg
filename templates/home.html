@@ -12,22 +12,22 @@
         </div>
     </div>
     <main>
-        <div class="main-content">
-            <div class="bigTitle">
-                <center>
-                    Upload an image to 
-                extract the foreground
-                </center>
-            </div>
-            <form action="/upload" class="dropzone" method="post" enctype="multipart/form-data">
-                    <div class = "upload-container">
-                    
-                        <input  type="file" name="file" required>
-                        <input class='submit-btn' type="submit" value="Extract"></input>                
+            <div class="main-content">
+                <div class="bigTitle">
+                    <center>
+                        Upload an image to 
+                    extract the foreground
+                    </center>
                 </div>
-            </form>
+                <form action="/upload" class="dropzone" method="post" enctype="multipart/form-data">
+                        <div class = "upload-container">
+                        
+                            <input  type="file" name="file" required>
+                            <input class='submit-btn' type="submit" value="Extract"></input>                
+                    </div>
+                </form>
+                    
                 
-            
         </div>
     </main>
 {% endblock %}
